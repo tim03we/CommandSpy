@@ -8,7 +8,7 @@ description: Spioniere die Befehle anderer Spieler aus
 commands:
   commandspy:
     description: Enter Spy-Mode
-    aliases: ["ss"]
+    aliases: ["cspy"]
 permissions:
    commandspy.cmd:
     default: op

@@ -21,9 +21,9 @@ class Main extends PluginBase {
 	}
 	
 	 public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {			
-		if(strtolower($command->getName()) == "socialspy" or strtolower($command->getName()) == "ss") {
+		if(strtolower($command->getName()) == "commandspy" or strtolower($command->getName()) == "cspy") {
 		 	if($sender instanceof Player) {
-				if($sender->hasPermission("socialspy.command")) {
+				if($sender->hasPermission("commandspy.cmd")) {
 					if(!isset($this->snoopers[$sender->getName()])) {
 						$sender->sendMessage("§aDu bist nun im Spy-Mode.");
 						$this->snoopers[$sender->getName()] = $sender;

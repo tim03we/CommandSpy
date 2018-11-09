@@ -9,7 +9,7 @@ use tim03we\CommandSpy\Main;
 class EventListener implements Listener {
 	public $plugin;
 	
-	public function __construct(CmdSnooper $plugin) {
+	public function __construct(Main $plugin) {
 		$this->plugin = $plugin;
 	}
 
